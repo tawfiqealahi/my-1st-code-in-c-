@@ -1,18 +1,20 @@
 #include<iostream>
-#include<conio.h>
+
 using namespace std;
 int main(){
-int amount;
-cout<< "enter per  ticket price: ";
-cin>> amount;
-int num;
-cout<< "enter total ticket : ";
-cin>>num;
-int totalCost = amount*num;
-if (num>3 || amount>1500){
-    totalCost== totalCost-(totalCost*.15);
-}
-cout<< "you buy " << num << " ticket. \n" << "total TK:" << totalCost ;
+int i;
+
+    for ( i=0; i<=300 ; ){
+        if(i<100){
+            cout<< (i+=5) << "\n";
+        }else if(i>100 && i<=200){
+         cout<< (i+=10) << "\n";
+        }else if(i>200 && i<=300){
+         cout<< (i+=20) << "\n";
+        }
+    }
+
+
 
 
 
